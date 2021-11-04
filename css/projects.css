@@ -1,0 +1,29 @@
+.projects {
+  padding-block: 40px;
+}
+.projects__img img {
+  max-inline-size: 100%;
+}
+.projects__text {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-inline-size: 500px;
+}
+.projects__text div {
+  display: contents;
+}
+@media screen and (min-width: 768px) {
+  .projects {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: 80px;
+  }
+  .projects:nth-of-type(odd) .projects__img {
+    order: 1;
+  }
+  .projects__text div {
+    display: block;
+  }
+}

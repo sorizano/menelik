@@ -1,0 +1,39 @@
+.header {
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  block-size: 80px;
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(5px);
+  z-index: 11;
+}
+
+.logo {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: var(--primary-color);
+  font-family: var(--primary-font);
+  font-weight: 900;
+}
+.menu {
+  display: none;
+}
+.menu ul {
+  display: flex;
+  gap: 40px;
+}
+.menu ul li a {
+  color: var(--second-color);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.menu ul li a.is-active {
+  color: var(--primary-color);
+}
+@media screen and (min-width: 768px) {
+  .menu {
+    display: block;
+  }
+}
